@@ -11,7 +11,7 @@
 * [Never](#Never)
 * [Any](#Any)
 
-1.1 <span id="String">**String**</span>  
+1. <span id="String">**String**</span>  
 字符串类型可以用单引号，双引号，也可以用模板字符串
 ```ts
 let name: string = '余笙学长';
