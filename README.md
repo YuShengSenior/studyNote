@@ -5,7 +5,7 @@
 <!-- [我的网站](http://www.yushengsenior.top) -->
 * [JavaScript学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./JavaScript/JavaScript学习笔记.md)
   * [ECMA-20XX  <img  src='https://img.shields.io/badge/Finish-15%25-blue'>](./JavaScript/ECMA20XX.md)
-* [TypeScript学习笔记  <img  src='https://img.shields.io/badge/Finish-30%25-yellowgreen'> ](./TypeScript/TypeScript学习笔记.md) 
+* [TypeScript学习笔记  <img  src='https://img.shields.io/badge/Finish-30%25-green'> ](./TypeScript/TypeScript学习笔记.md) 
 * [React学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./React/React学习笔记.md)
 * [Vue学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./Vue/Vue学习笔记.md)
 * [nodejs学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./nodejs/nodejs学习笔记.md)
