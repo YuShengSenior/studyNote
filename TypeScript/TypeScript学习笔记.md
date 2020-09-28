@@ -9,8 +9,9 @@
 * [Symbol](#Symbol)
 * [void](#void)
 * [Never](#Never)
+* [Any](#Any)
 
-1.1 <span id="String">**字符串**</span>  
+1.1 <span id="String">**String**</span>  
 字符串类型可以用单引号，双引号，也可以用模板字符串
 ```ts
 let name: string = '余笙学长';
@@ -38,6 +39,7 @@ let notANumber: number = NaN;
 let infinityNumber: number = Infinity;
 ```
 4. <span id="Array">**Array**</span>  
+数组定义需要声明数组里元素的类型,string只能装字符串,number只能装数字,如果数据结构过于复杂可以用any,但是不建议  
 数组有两种定义方法  
 * 第一种
 ```ts
@@ -48,7 +50,7 @@ let fupos: string[] = ['翠花', '小芳', '铁蛋'];
 let fuposMoney: Array<number> = [17327185421871234, 38912123497910273, 9248913412373657264];
 ```
 5. <span id="yuanzu">**元组**</span>
-元组类似一个数组，但是和数组的区别是，元组有固定的长度和类型  
+元组类似一个数组，但是和数组的区别是，元组有固定的长度和类型(编译后其实就是一个数组)  
     1.  长度固定
     2. 有类型，类型可以不统一
 ```ts
@@ -147,6 +149,16 @@ function sum():never {
   console.log('end point');
 }
 ```
+12. <span id="Any">**Any**</span>  
+ts中所有类型都是any类型的子类型,任何类型都可以被归为any,也就是说any类型十四系统的顶级类型(全局超级类型)  
+```ts
+let myAny:any = 666;
+myAny = '字符串';
+myAny = true;
+myAny = [1,2,3];
+// ...........
+```
+ts也有一个外号叫anyscript,就是代码中无脑any类型,这违背了ts的初衷,因此,ts3.0引入了unkonw类型
 
 ## 类型推论
 如果定义变量的时候没有给定类型，ts会猜测这个变量的类型
