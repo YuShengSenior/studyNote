@@ -3,7 +3,7 @@
 * [Boolean](#Boolean)
 * [Number](#Number)
 * [Array](#Array)
-* [元组](#yuanzu)
+* [Tuple](#Tuple)
 * [Enum](#Enum)
 * [null和undefined](#nullundefined)
 * [Symbol](#Symbol)
@@ -50,7 +50,7 @@ let fupos: string[] = ['翠花', '小芳', '铁蛋'];
 ```ts
 let fuposMoney: Array<number> = [17327185421871234, 38912123497910273, 9248913412373657264];
 ```
-5. <span id="yuanzu">**元组**</span>
+5. <span id="Tuple">**Tuple**</span>
 元组类似一个数组，但是和数组的区别是，元组有固定的长度和类型(编译后其实就是一个数组)  
     1.  长度固定
     2. 有类型，类型可以不统一
