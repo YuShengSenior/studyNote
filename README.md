@@ -3,10 +3,10 @@
 <img src='https://img.shields.io/badge/-%E8%BD%AC%E8%BD%BD%E8%AF%B7%E6%B3%A8%E6%98%8E%E5%87%BA%E5%A4%84-red'>  
 </a>
 <!-- [我的网站](http://www.yushengsenior.top) -->
-* [JavaScript学习笔记  <img width='55' src='https://img.shields.io/badge/Finish-0%25-inactive'>](./JavaScript/JavaScript学习笔记.md)  
-* [TypeScript学习笔记  <img width='55' src='https://img.shields.io/badge/Finish-30%25-yellowgreen'> ](./TypeScript/TypeScript学习笔记.md) 
-* [React学习笔记<img width='55' src='https://img.shields.io/badge/Finish-0%25-inactive'>](./React/React学习笔记.md)
-* [Vue学习笔记<img width='55' src='https://img.shields.io/badge/Finish-0%25-inactive'>](./Vue/Vue学习笔记.md)
-* [nodejs学习笔记<img width='55' src='https://img.shields.io/badge/Finish-0%25-inactive'>](./nodejs/nodejs学习笔记.md)
-* [Python学习笔记<img width='55' src='https://img.shields.io/badge/Finish-0%25-inactive'>](./Python/Python学习笔记.md)
-* [Git学习笔记<img width='55' src='https://img.shields.io/badge/Finish-0%25-inactive'>](./Git/Git学习笔记.md)
+* [JavaScript学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./JavaScript/JavaScript学习笔记.md)  
+* [TypeScript学习笔记  <img  src='https://img.shields.io/badge/Finish-30%25-yellowgreen'> ](./TypeScript/TypeScript学习笔记.md) 
+* [React学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./React/React学习笔记.md)
+* [Vue学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./Vue/Vue学习笔记.md)
+* [nodejs学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./nodejs/nodejs学习笔记.md)
+* [Python学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./Python/Python学习笔记.md)
+* [Git学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./Git/Git学习笔记.md)
