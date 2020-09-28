@@ -18,7 +18,7 @@ let name: string = '余笙学长';
 let girlFriends: string = "富婆们";
 let say: string = `我有一个富婆,她的年龄${60}多`;
 ```
-2. <span id="Boolean">**Boolean**</span>
+2. <span id="Boolean">**Boolean**</span>  
 同js的Boolean类型,只有true和false
 ```ts
 let isHaveGirlfriend: boolean = false;
