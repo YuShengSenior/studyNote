@@ -1,3 +1,4 @@
+[TypeScript官方文档传送门](https://www.tslang.cn/docs/handbook/basic-types.html)
 ## 基本数据类型 
 * [String](#String)
 * [Boolean](#Boolean)
@@ -10,6 +11,7 @@
 * [void](#void)
 * [Never](#Never)
 * [Any](#Any)
+* [Unknown](#Unknown)
 
 1. <span id="String">**String**</span>  
 字符串类型可以用单引号，双引号，也可以用模板字符串
@@ -159,7 +161,42 @@ myAny = true;
 myAny = [1,2,3];
 // ...........
 ```
-ts也有一个外号叫anyscript,就是代码中无脑any类型,这违背了ts的初衷,因此,ts3.0引入了unkonw类型
+给any重新指定类型  
+```ts
+let wife:any;
+let wife1:string = wife;      //可
+let wife2:number = wife;      //可
+let wife3:boolean = wife;     //可
+let wife4:any[] = wife;       //可
+let wife6:null = wife;        //可  
+let wife7:undefined = wife;   //可
+// ⚠️温馨提示,在我国重婚是违法行为,包养小三是不道德行为!
+```
+ts也有一个外号叫anyscript,就是代码中无脑any类型,这违背了ts的初衷,因此,ts3.0引入了unkonw类型  
+13. <span id="Unknown">**Unknown**</span>  
+就像所有的类型都可以赋值给any,所有类型也都可以赋值给unknow,这让unkonw成为ts类型系统的另一种顶级类型  
+```ts
+let girlFriend:unknown;   
+girlFriend = null;        // 可
+girlFriend = undefined;   // 可
+girlFriend = '迪丽热巴';   // 可
+girlFriend = true;        // 可
+girlFriend = {name:'女神'};// 可
+girlFriend = 666;         //可
+girlFriend = ['迪丽热巴','古力娜扎','萝莉们']  // 可 
+```
+这tm和any没啥区别吧?重新赋值↓  
+```ts
+let girlFriend1:any = girlFriend;       // 可
+let girlFriend2:unknown = girlFriend;   // 可
+let girlFriend3:string = girlFriend;    //不能将类型“unknown”分配给类型“string”。
+let girlFriend4:number = girlFriend;    // 同上
+let girlFriend5:boolean = girlFriend;    // 同上
+let girlFriend6:any[] = girlFriend;     // 同上
+let girlFriend7:object = girlFriend;    // 同上
+```
+unknown类型只能赋值给any或unknown本身,也就是说只有能够保存任意类型的容器才能保存unknown类型的值,因为我们不知道变量中储存了什么值,就像明天和意外你永远不知道哪个先来(自寻短见的不算哈)  
+
 
 ## 类型推论
 如果定义变量的时候没有给定类型，ts会猜测这个变量的类型
