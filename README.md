@@ -19,7 +19,7 @@
 * [Vue学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./Vue/Vue学习笔记.md)
   * [Vue3学习笔记<img  src='https://img.shields.io/badge/Finish-8%25-7ea04d'>](./Vue/Vue3学习笔记.md)
 * [nodejs学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./nodejs/nodejs学习笔记.md)
-* [Python学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./Python/Python学习笔记.md)
+* [Python学习笔记  <img  src='https://img.shields.io/badge/Finish-0.2%25-7ea04d'>](./Python/Python学习笔记.md)
 * [Git学习笔记  <img  src='https://img.shields.io/badge/Finish-0%25-inactive'>](./Git/Git学习笔记.md)
 
 ## 🖋编写者  
