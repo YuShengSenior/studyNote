@@ -1,5 +1,7 @@
-vue3编译器  
-https://vue-next-template-explorer.netlify.app/
+[vue3官网](https://v3.vuejs.org/)
+[vue3编译器](https://vue-next-template-explorer.netlify.app/)  
+[vue-cli](https://cli.vuejs.org/)
+
 diff算法优化  
   * vue2中是全量比较
   * vue3中是静态标记（PatchFlag）  
@@ -58,20 +60,20 @@ export function render(_ctx, _cache, $props, $setup, $data, $options) {
   
 
 
-ref智能监听简单类型的数据
-reactive 可以监听复杂类型的数据 例如：数组、对象
-组合api
-composition api 和option api
-composition api本质  注入
-setup执行时机
+ref只能监听简单类型的数据  
+reactive 可以监听复杂类型的数据 例如：数组、对象  
+组合api  
+composition api 和option api  
+composition api本质  注入  
+setup执行时机  
 组件的  
-* beforeCreate 组件刚刚被创建出来，组建的data和methods还没初始化好 
 * setup  
+* beforeCreate 组件刚刚被创建出来，组建的data和methods还没初始化好 
 * Created 组件刚刚被创建出来，data和methods已经初始化好
 
 setup注意点  
 1. 执行setup的时候还没有执行created生命周期，在setup函数中不能使用data和methods
-2. 不能再setup不是能使用data和methods，为了避免错误使用，setup中的this修改成undefined
+2. 不能在setup不能使用data和methods，为了避免错误使用，setup中的this修改成undefined
 3. setup函数只能是同步的，不能是异步的
 
 # reactive
