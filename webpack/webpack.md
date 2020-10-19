@@ -46,6 +46,24 @@ module.exports = {
           'less-loader'
         ]
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        // 依赖于file-loader
+        loader: 'url-loader',
+        options: {
+          // 图片大小小于limit值进行base64处理
+          limit: 8 * 1024,
+          // 关闭es6模块化解析,使用CommonJS解析
+          esModule: false,
+          // 取图片的hash的前10位 取文件的原拓展名
+          name: '[hash:10].[ext]'
+        },
+      },
+      {
+        test: /\.html$/,
+        // 处理html文件的img标签图片(负责引入img,从而能被url-loader进行处理)
+        loader: 'html-loader'
+      }
     ],
     // plugins配置
     pugins:[
