@@ -33,7 +33,7 @@ module.exports = {
     rules: [
     // 详细的loader配置
       {
-        // 正则表达式,匹配以css结尾的
+        // 正则表达式,匹配以less结尾的
         test: /\.less$/,
         // 使用哪些loader处理
         use: [
