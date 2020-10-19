@@ -80,3 +80,80 @@ module.exports = {
   // 或者为 production
 };
 ```
+## 开发环境配置  
+开发环境能让代码运行即可
+```js
+/**
+ * 开发环境配置
+ */
+
+const { resolve } = require("upath");
+const HtmlWebpackPlugin = require("html-webpack-plugin")
+
+module.exports = {
+
+  entry: './src/index.js',
+  output: {
+    filename: 'js/built.js',
+    path: resolve(__dirname, 'build')
+  },
+  module: {
+    rules: [
+      // less
+      {
+        test: /\.less$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'less-loader'
+        ]
+      },
+      // css
+      {
+        test: /\css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      // 图片
+      {
+        test: /\.(jpg|png|gif)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 8 * 1024,
+          name: '[hash:10],[ext]',
+          esModule: false,
+          outputPath: 'imgs'
+        },
+      },
+      // html 中的图片
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
+      },
+      {
+        exclude: /\.(.html|js|css|less|jpg|png|gif)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[hash:10].[ext]',
+          outputPath: 'media'
+        }
+      }
+    ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    })
+  ],
+  mode: 'development',
+  devServer: {
+    contentBase: resolve(__dirnanme, 'build'),
+    compress: true,
+    prot: 3000,
+    open: true
+  }
+
+}
+```
