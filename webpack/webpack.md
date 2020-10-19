@@ -34,7 +34,7 @@ module.exports = {
     // 详细的loader配置
       {
         // 正则表达式,匹配以css结尾的
-        test: /\.css$/,
+        test: /\.less$/,
         // 使用哪些loader处理
         use: [
           // use数组中执行顺序:从下到上
@@ -49,7 +49,12 @@ module.exports = {
     ],
     // plugins配置
     pugins:[
-    // 详细的plugins配置
+      // 详细的plugins配置
+      new HtmlWebpackPlugin(
+        // 复制./src/index/html文件,引入打包输出的所有资源(js/css)
+        template: './src/index/html'
+      )
+      // 功能: 默认会常见一个空的html,引入打包输出的所有资源(js/css)
     ]
   },
   // 模式
